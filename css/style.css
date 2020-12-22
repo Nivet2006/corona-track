@@ -35,7 +35,7 @@ input:focus {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff8c00e8;
+    background: #4e54c8cc;
 }
 
 ::selection {
@@ -437,7 +437,7 @@ MAIN CONTENT STYLES
 }
 
 .thanks_link {
-    color: #ff8c00;
+    color: #4e54c8cc;
     opacity: 0.7;
     text-decoration: none;
     font-weight: 600;
@@ -571,7 +571,7 @@ tr:hover {
 .next_page:hover,
 .prev_page:hover,
 .first_page:hover {
-    border-color: #ff8c00;
+    border-color: #4e54c8cc;
 }
 
 .next_icon,
@@ -592,7 +592,7 @@ tr:hover {
 .next_page:hover .next_icon,
 .prev_page:hover .prev_icon,
 .first_page:hover .prev_icon {
-    color: #ff8c00;
+    color: #4e54c8cc;
 }
 /*
 SYMPTOMS STYLES
