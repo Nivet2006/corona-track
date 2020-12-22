@@ -269,7 +269,7 @@ MAIN CONTENT STYLES
     right: 46px;
     width: 255px;
     height: 240px;
-    background-image: url(../images/coughing.svg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/covid-MASK.png?alt=media&token=2377be2b-d3f6-4814-85b8-9c4f22288fc7);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,7 +337,7 @@ MAIN CONTENT STYLES
 }
 
 .no_result_img {
-    background-image: url(../images/creative_minds0987-web-productions.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/creative_minds0987-web-productions.png?alt=media&token=385ce167-f435-4714-86ac-acbb415f5f4d);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
