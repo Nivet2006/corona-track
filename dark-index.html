@@ -1,1 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona-track(a minds0987 project)</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/coronavirus.png?alt=media&token=bf0268d2-66b3-4481-85c0-e819e23e8214">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/coronavirus.png?alt=media&token=bf0268d2-66b3-4481-85c0-e819e23e8214">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/coronavirus.png?alt=media&token=bf0268d2-66b3-4481-85c0-e819e23e8214">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/dark-style.css">
+</head>
+
+<body>
+    <!--firebase scripts start!!-->
+    <!--<scipt>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyAp3t3ZE12Mkg5qbRG5WWQeMYakhE33G7w",
+        authDomain: "corona-track-minds.firebaseapp.com",
+        projectId: "corona-track-minds",
+        storageBucket: "corona-track-minds.appspot.com",
+        messagingSenderId: "402430354787",
+        appId: "1:402430354787:web:031a46227d62e4c1c01f56",
+        measurementId: "G-5WW216KFWY"
+    };
+</scipt>-->
+<!--Firebase script ends!!-->
+    <nav id="navbar">
+        <div class="navbar_container">
+            <div class="logo_links">
+                <a href="https://creativeminds0987.github.io/corona-track/" class="home_link">
+                    <p class="logo"><span class="logo_span">C</span>orona-track</p>
+                </a>
+
+                <ul class="nav_links">
+                    <!--<li class="link_li"><a href="https://creativeminds0987.github.io/corona-track/" class="link_href active">Home</a></li>-->
+                    <li class="link_li"><a href="/corona-track/countries.html" class="link_href">Country Stats</a></li>
+                    <!--<li class="link_li"><a href="mailto:minds0987@gmail.com" class="link_contact">Contact-us</a></li>-->
+                    <li class="link_li"><a href="/corona-track/index.html" class="link_href">🌞</a></li>
+                </ul>
+            </div>
+
+            <div class="searchbar">
+                <form class="seach_bar">
+                    <input type="search" name="search" placeholder="Search for your country..." id="search_bar_input"
+                        class="search_bar_input">
+                    <button type="submit" class="search_btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main_content">
+        <div class="cards_container container">
+            <div class="overview_card">
+                <h1 class="overview_heading"><span>Coronavirus</span> disease<br>(COVID-19)<br>Pandemic</h1>
+
+                <p class="overview_info">The disease causes respiratory illness<br>with symptoms
+                    such<br>as cough, fever, loss of smell..</p>
+<!--href="https://www.who.int/health-topics/coronavirus#tab=tab_1" %% fas fa-angle-right caret_icon-->
+                <div class="btn-cont">
+                    <button type="submit" class="more_info_btn">
+                        <a href="#preventions"class="btn_text">
+                            Preventions</a>
+                        <i class="fas fa-angle-down caret_icon"></i>
+                    </button>
+                
+                    <button type="submit" class="more_info_btn symptoms_btn">
+                        <a href="#symptoms" class="btn_text_2">Symptoms</a>
+                        <i class="fas fa-angle-down caret_icon"></i>
+                    </button>
+                </div>
+
+                <div class="overview_img"></div>
+            </div>
+
+            <div class="total_cases_card">
+                <div class="total_cases_cols">
+                    <div class="total_deaths">
+                        <h4 class="cases_number total_death_number">---</h4>
+                        <h3 class="total_deaths_heading">Death toll</h3>
+                    </div>
+
+                    <div class="total_recovered">
+                        <h4 class="cases_number total_recovered_number">---</h4>
+                        <h3 class="total_recovered_heading">total recovered</h3>
+                    </div>
+
+                    <div class="total_confirmed">
+                        <h4 class="cases_number total_infected_number">---</h4>
+                        <h3 class="total_confirmed_heading">total infected</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specific_card">
+                <h1 class="country_name">Thank you for using corona-track</h1>
+
+                <div class="specific_rows">
+                    <!-- <div class="specific_deaths">
+                        <h4 class="cases_number death_number">---</h4>
+                        <h3 class="specific_deaths_heading">Death toll</h3>
+                    </div>
+
+                    <div class="specific_recovered">
+                        <h4 class="cases_number recovered_number">---</h4>
+                        <h3 class="specific_recovered_heading">recovered</h3>
+                    </div>
+
+                    <div class="specific_confirmed">
+                        <h4 class="cases_number infected_number">---</h4>
+                        <h3 class="specific_confirmed_heading">infected</h3>
+                    </div> -->
+                    <div class="no_result_img"></div>
+                    <p class="no_result_text">Seach for your<br>country to know<br>about the affected...</p>
+                </div>
+
+                <div class="clip_background"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="symptoms">
+        <div class="symptoms_container container">
+            <h1 class="symptoms_heading">Symptoms</h1>
+<!--Start of symptoms slider!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->            
+            <div class="slider">
+                <div class="item" id='slide-1'>
+                    <div class="symptom_img symptom_img_1"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/cough.png?alt=media&token=3a6d3401-ab76-40e5-8acf-c4f41b48e857" alt="cough.png"></div>
+                    <p class="symptom_text">Cough</p>
+                </div>
+
+                <div class="item" id='slide-2'>
+                    <div class="symptom_img symptom_img_2"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/fever.png?alt=media&token=192bb292-e70f-4097-9aaf-e5b8915bc55d" alt="fever.png"></div>
+                    <p class="symptom_text">Fever</p>
+                </div>
+
+                <div class="item" id='slide-3'>
+                    <div class="symptom_img symptom_img_3"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/tired.png?alt=media&token=a0c0bd22-2033-4b4f-bfa9-fa7190ae0325" alt="tired.png"></div>
+                    <p class="symptom_text">Tiredness</p>
+                </div>
+
+                <div class="item" id='slide-4'>
+                    <div class="symptom_img symptom_img_4"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/runny_nose.png?alt=media&token=dc005975-9436-495b-a0a4-dae951f74cf7" alt="runny_nose.png"></div>
+                    <p class="symptom_text">Runny nose</p>
+                </div>
+
+                <div class="item" id='slide-5'>
+                    <div class="symptom_img symptom_img_5"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/cold.png?alt=media&token=ba1525d2-f628-4b90-a868-877c7d18b6e2" alt="cold.png"></div>
+                    <p class="symptom_text">Cold</p>
+                </div>
+
+                <div class="item" id='slide-5'>
+                    <div class="symptom_img symptom_img_5"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/dizzyness.png?alt=media&token=f176c723-7881-46e8-a907-9d720c1f2213" alt="dizzyness.png"></div>
+                    <p class="symptom_text">dizzyness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preventions">
+        <div class="symptoms_container prevention_conttainer container">
+            <h1 class="symptoms_heading">Preventions</h1>
+
+            <div class="slider prevention_slider">
+                <div class="item" id='slide-1'>
+                    <div class="symptom_img prevention_img symptom_img_1"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/mask.jpg?alt=media&token=1b789c7c-affc-4417-ab07-5780a3e14305" alt="mask.png">
+                    </div>
+                    <p class="symptom_text">Always wear mask</p>
+                </div>
+
+                <div class="item" id='slide-2'>
+                    <div class="symptom_img prevention_img prevention_img_2 symptom_img_2"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/wash.jpg?alt=media&token=d31cd962-8ef8-4566-8ced-5100efe7b8da"
+                            alt="wash.png"></div>
+                    <p class="symptom_text">Wash hands with soap</p>
+                </div>
+
+                <div class="item" id='slide-3'>
+                    <div class="symptom_img prevention_img symptom_img_3"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/touch.jpg?alt=media&token=b754ae5d-a0f0-4108-887a-7e483bfd1e7d" alt="touch.png">
+                    </div>
+                    <p class="symptom_text">Never touch your face</p>
+                </div>
+
+                <div class="item" id='slide-4'>
+                    <div class="symptom_img prevention_img symptom_img_4"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/cough.jpg?alt=media&token=47725e45-6945-4680-ad61-d739a67d9eae" alt="cough.png">
+                    </div>
+                    <p class="symptom_text">Cough into elbows</p>
+                </div>
+
+                <div class="item" id='slide-5'>
+                    <div class="symptom_img prevention_img symptom_img_5"><img src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/disinfactant.jpg?alt=media&token=31ae3086-f78f-4366-978b-eefbe3248d1b"
+                            alt="disinfactant.png"></div>
+                    <p class="symptom_text">Clean and disinfect</p>
+                </div>
+
+                <div class="item" id='slide-5'>
+                    <div class="symptom_img prevention_img prevention_img_6 symptom_img_6"><img
+                            src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/distance.jpg?alt=media&token=b49ffba1-c7e6-48d1-8e4a-ad2baec7c300" alt="social-distance.png"></div>
+                    <p class="symptom_text">Maintain social distancing</p>
+                </div>
+                
+                <div class="item" id='slide-5'>
+                    <div class="symptom_img prevention_img prevention_img_6 symptom_img_6"><img
+                            src="https://firebasestorage.googleapis.com/v0/b/corona-track-minds.appspot.com/o/sanitizer.png?alt=media&token=037c9733-f947-4464-a9c0-de18c73ddde2" alt="use sanitizer.png"></div>
+                    <p class="symptom_text">Use sanitizer</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer_container container">
+            <p class="copyright">&copy;  <a href="https://github.com/Creativeminds0987" target="_blank">minds0987 web productions</a> | view<a href="/license.html"> 🔑License</a></p>
+
+            <div class="social-icons">
+                <a href="https://github.com/Creativeminds0987" target="_blank" class="social-link"><i
+                        class="fab fa-github social-icon"></i></a>
+                <a href="https://dev.to/creativeminds0987" target="_blank" class="social-link"><i
+                        class="fab fa-dev social-icon"></i></a>
+                <a href="mailto:minds0987@gmail.com" class="social-link"><i
+                        class="far fa-envelope social-icon"></i></a>
+            </div>
+        </div>
+    </section>
+<!--links :
+https://emojipedia.org/
+https://disease.sh
+https://dev.to
+https://github.com
+https://hashnode.dev
+https://creativeminds0987.github.io/corona-track/
+https://emgithub.com/
+https://www.freepik.com/
+-->
+    <!-- <script src="./app.js"></script> -->
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
