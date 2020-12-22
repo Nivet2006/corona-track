@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #eee;
+    background-color: rgb(53, 51, 51);
 }
 
 .container {
@@ -30,16 +30,16 @@ input:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff8c00a1;
+    background: rgb(92, 91, 91);
     border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff8c00e8;
+    background: #000000;
 }
 
 ::selection {
-    background-color: #ff8c0073;
+    background-color: #C0C0C0;
 }
 
 .loader {
@@ -58,9 +58,9 @@ NAVBAR STYLES
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: grey;
     border-radius: 8px;
-    box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 0 0 white;
     border: 1px solid #ddd;
 }
 
@@ -84,13 +84,13 @@ NAVBAR STYLES
 .logo_span {
     font-weight: 800;
     font-size: 1.15em;
-    color: #ff8c00;
+    color: #000000;
     transition: all 0.2s ease;
     margin: 0 2px 0 4px;
 }
 
 .logo:hover .logo_span {
-    text-shadow: -3px -3px #ff8c00;
+    text-shadow: -3px -3px #ffffff;
 }
 
 .nav_links {
@@ -117,11 +117,11 @@ NAVBAR STYLES
 }
 
 .link_contact:hover {
-    background-color: #ff8c0063;
+    background-color: #ffffff;
 }
 
 .link_href {
-    color: rgba(0, 0, 0, 0.6);
+    color: #000000;
     position: relative;
     text-decoration: none;
     font-weight: 600;
@@ -132,7 +132,7 @@ NAVBAR STYLES
 }
 
 .link_href:hover {
-    background-color: #ff8c0063;
+    background-color:#ffffff;
 }
 
 .seach_bar {
@@ -144,10 +144,10 @@ NAVBAR STYLES
     padding: 8px 58px 8px 20px;
     width: 260px;
     border-radius: 20px;
-    background-color: #d1d1d17c;
+    background-color: #ffffff;
 }
 
-.search_bar_input::placeholder{
+.search_bar_input::placeholder{ 
     font-size: 0.85em;
 }
 
@@ -160,7 +160,7 @@ NAVBAR STYLES
     transform: translateY(-50%);
     padding: 0 18px;
     background-color: transparent;
-    color: #ff8c00;
+    color: grey;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -185,10 +185,10 @@ MAIN CONTENT STYLES
 
 .overview_card {
     grid-area: total;
-    background-color: white;
+    background-color: grey;
     padding: 34px 46px;
     border-radius: 8px;
-    box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 0 0 white;
     border: 1px solid #ddd;
     position: relative;
 }
@@ -223,7 +223,7 @@ MAIN CONTENT STYLES
 .symptoms_btn  {
     display: flex;
     border: none;
-    background-color: #d1d1d17c;
+    background-color: #ffffff;
     padding: 10px 20px;
     border-radius: 60px;
     cursor: pointer;
@@ -251,7 +251,7 @@ MAIN CONTENT STYLES
 }
 
 .more_info_btn:hover{
-    background-color: #4e54c8cc;
+    background-color: #000000;
 }
 
 .more_info_btn:hover .caret_icon {
@@ -260,7 +260,7 @@ MAIN CONTENT STYLES
 
 .more_info_btn:hover .btn_text,
 .more_info_btn:hover .btn_text_2 {
-    color: #f5f5f5;
+    color: #ffffff;
 }
 
 .overview_img {
@@ -277,10 +277,10 @@ MAIN CONTENT STYLES
 
 .total_cases_card {
     grid-area: total_number;
-    background-color: white;
+    background-color: grey;
     padding: 32px 46px;
     border-radius: 8px;
-    box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 0 0 white;
     border: 1px solid #ddd;
     position: relative;
 }
@@ -306,17 +306,42 @@ MAIN CONTENT STYLES
 }
 
 .total_death_number {
-    color: #ff4500;
+    color: #ffffff;
 }
 
 .total_recovered_number {
-    color: rgb(41, 167, 41);
+    color: #ffffff;
 }
 
 .total_infected_number {
-    color: #4e54c8;
+    color: #ffffff;
 }
 
+.total_deaths_heading {
+    font-weight: 800;
+    color: red;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    opacity: 0.35;
+}
+
+.total_recovered_heading {
+    font-weight: 800;
+    color: green;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    opacity: 0.35;
+}
+
+.total_confirmed_heading {
+    font-weight: 800;
+    color: blue;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    opacity: 0.35;
+}
+
+/*
 .total_deaths_heading,
 .total_recovered_heading,
 .total_confirmed_heading {
@@ -325,13 +350,13 @@ MAIN CONTENT STYLES
     text-transform: uppercase;
     opacity: 0.35;
 }
-
+*/
 .specific_card {
     grid-area: specific;
-    background-color: white;
+    background-color: grey;
     padding: 34px 46px;
     border-radius: 8px;
-    box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 0 0 #ffffff;
     border: 1px solid #ddd;
     position: relative;
 }
@@ -371,7 +396,7 @@ MAIN CONTENT STYLES
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 34px;
-    color: rgba(0, 0, 0, 0.8);
+    color:#ffffff;
     position: relative;
 }
 
@@ -601,11 +626,12 @@ SYMPTOMS STYLES
 
 .slider::-webkit-scrollbar-track {
     background: #eee;
+    border-radius: 5px;
 }
 
 .slider::-webkit-scrollbar-thumb {
-    background: #ff8c00a1;
-    border-radius: 12px;
+    background: #C0C0C0;
+    border-radius: 4px;
 }
 
 .slider::-webkit-scrollbar-thumb:hover {
@@ -635,7 +661,7 @@ SYMPTOMS STYLES
     padding: 10px 22px;
     width: max-content;
     background-color: #d1d1d17c;
-    color: rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
 .slider {
@@ -737,7 +763,7 @@ FOOTER STYLES
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
     color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.1);
@@ -754,7 +780,7 @@ FOOTER STYLES
 }
 
 .copyright a {
-    color: #ff8c00;
+    color: #000000;
     opacity: 0.7;
     text-decoration: none;
     font-weight: 600;
@@ -764,11 +790,11 @@ FOOTER STYLES
 
 .copyright a:hover {
     opacity: 1;
-    text-decoration: underline;
+    text-decoration: bold;
 }
 
 .social-icons{
-    background-color: #d1d1d17c;
+    background-color: #ffffff;
     padding: 8px 18px;
     border-radius: 20px;
     display: flex;
@@ -783,7 +809,7 @@ FOOTER STYLES
 }
 
 .social-icon:hover {
-    color: #ff8c00;
+    color: #000000;
 }
 
 .stay-home-txt{
@@ -882,6 +908,7 @@ MEDIA QUERIES
     }
 
     .no_result_text {
+        color: #ffffff;
         margin-top: 30px;
     }
 
