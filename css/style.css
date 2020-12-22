@@ -446,7 +446,7 @@ MAIN CONTENT STYLES
 
 .thanks_link:hover {
     opacity: 1;
-    text-decoration: underline;
+    text-decoration: bold;
 }
 
 .table_card {
