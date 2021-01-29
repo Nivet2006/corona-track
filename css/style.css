@@ -1081,7 +1081,7 @@ NAVBAR STYLES
 }
 
 .logo:hover .logo_span {
-    text-shadow: -3px -3px grey;
+    text-shadow: -3px -3px #4e54c8cc;
 }
 
 .nav_links {
