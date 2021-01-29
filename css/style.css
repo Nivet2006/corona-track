@@ -1075,7 +1075,7 @@ NAVBAR STYLES
 .logo_span {
     font-weight: 800;
     font-size: 1.15em;
-    color: grey;
+    color: #4e54c8cc;
     transition: all 0.2s ease;
     margin: 0 2px 0 4px;
 }
